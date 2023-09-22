@@ -1,0 +1,28 @@
+<img src="../../assets/icon/Recurso 1.png">
+
+<ion-content  >
+  <ion-card class="todo">
+    <ion-card-header class="titi" color="primary">
+      LOGIN
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="ionLogin!">
+        <ion-item class="item">
+          <ion-input placeholder="username"formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input  placeholder="password"formControlName="password" type="password"></ion-input>
+        </ion-item>
+      </form>
+      
+      <ion-button expand="block" (click)="ingresar()" class="ingresa">
+        INGRESAR
+      </ion-button>
+      <ion-button expand="block" fill="clear" [routerLink]="['/registro']" class="regi">REGISTRARSE</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<img src="../../assets/icon/Recurso 2.png">
+      
+

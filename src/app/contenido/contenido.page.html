@@ -1,0 +1,18 @@
+<img src="../../assets/icon/abajoclaro.png" class="jiju">
+<h1 class="foto" >CONTENIDO</h1>
+<div class="linea-separacion"></div>
+
+<ion-content>
+     
+  <ion-item class="iten" *ngFor="let pokemon of pokemons" >
+    <ion-thumbnail slot="start">
+      <img [src]="pokemon.img?.src" alt="{{ pokemon.name }}">
+    </ion-thumbnail>
+    <ion-label>
+      <h2 class="tito">{{ pokemon.name }}</h2>
+      <p class="tito">Tipo: {{ pokemon.typeList.join(', ') }}</p>
+    </ion-label>
+  </ion-item> 
+
+</ion-content>
+

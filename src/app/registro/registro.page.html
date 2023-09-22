@@ -1,0 +1,26 @@
+<img src="../../assets/icon/Recurso 1.png">
+<ion-content>
+  <ion-card>
+    <ion-card-header class="titi" color="primary">
+       REGISTRO
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formularioRegistro" (keyup.enter)="guardar()">
+        <ion-item class="item">
+          <ion-input placeholder="username" formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="password" formControlName="password" type="password" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="confirm password" formControlName="confirmacionPassword" type="password"></ion-input>
+        </ion-item>
+        <br>
+        <ion-button expand="block" (click)="guardar()">guardar
+        </ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<img src="../../assets/icon/Recurso 2.png">
